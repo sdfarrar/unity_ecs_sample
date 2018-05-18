@@ -14,7 +14,8 @@ public class Bootstrap : MonoBehaviour {
 		EntityArchetype playerArchetype = entityManager.CreateArchetype(
 			typeof(TransformMatrix),
 			typeof(Position),
-			typeof(MeshInstanceRenderer)
+			typeof(MeshInstanceRenderer),
+			typeof(PlayerInput)
 		);
 
 		Entity player = entityManager.CreateEntity(playerArchetype);
