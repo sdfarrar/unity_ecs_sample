@@ -142,6 +142,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerMesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
   PlayerMaterial: {fileID: 2100000, guid: 1c71043d0c508994bafeb85609b58049, type: 2}
+  BlockMesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  BlockMaterial: {fileID: 2100000, guid: 87d35b7ae72b9c544a9246bad596b383, type: 2}
 --- !u!4 &289410830
 Transform:
   m_ObjectHideFlags: 0

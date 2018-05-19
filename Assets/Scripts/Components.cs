@@ -9,5 +9,10 @@ public struct PlayerInput: IComponentData{
 	public float Vertical;
 }
 
+public struct GridPlayerInput: IComponentData{
+	public float Horizontal;
+	public float Vertical;
+}
+
 public struct Block: IComponentData{}
 public struct Fly: IComponentData{}

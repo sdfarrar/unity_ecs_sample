@@ -15,7 +15,7 @@ public class PlayerInputSystem : JobComponentSystem {
 		}
 	}
 
-	private static int batchSize = 1;
+    private static int batchSize = 1;
 
 	protected override JobHandle OnUpdate(JobHandle inputDeps) {
 		// Prepare data for job

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerMovementSystem : JobComponentSystem {
 
-	public struct PlayerInputJob : IJobProcessComponentData<Position, PlayerInput>{
+	public struct PlayerMovementJob : IJobProcessComponentData<Position, PlayerInput>{
 		public float dt;
 
 		// Loop through all entities with PlayerInput component and store input value
@@ -19,7 +19,7 @@ public class PlayerMovementSystem : JobComponentSystem {
 
 	protected override JobHandle OnUpdate(JobHandle inputDeps) {
 		// Prepare data for job
-		PlayerInputJob job = new PlayerInputJob{
+		PlayerMovementJob job = new PlayerMovementJob{
 			dt = Time.deltaTime, // cannot access Time.deltaTime within our job
 		};
 		
